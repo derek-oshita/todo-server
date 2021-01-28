@@ -1,10 +1,12 @@
-// imports
+// IMPORTS
 const router = require('express').Router();
 const ctrl = require('../controllers');
 
-// routes
+// ROUTES
 router.get('/', ctrl.items.index); 
 
-// exports 
+router.post('/', ctrl.items.create); 
+
+// EXPORTS 
 module.exports = router; 
 

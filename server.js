@@ -7,6 +7,10 @@ require('dotenv').config();
 
 const Item = require('./models/Item.js'); 
 
+// MIDDLEWARE JSON PARSING 
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
+
 // HOME ROUTE
 app.get('/', (req, res) => {
     res.send('MILAAAAAAA')
