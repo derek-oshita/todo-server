@@ -4,8 +4,10 @@ const app = express();
 const port = process.env.PORT || 3000; 
 require('dotenv').config(); 
 
-
-
+// HOME ROUTE
+app.get('/', (req, res) => {
+    res.send('MILAAAAAAAA')
+}); 
 
 // CONNECTION 
 app.listen(port, () => {
