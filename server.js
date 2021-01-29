@@ -5,7 +5,6 @@ const port = process.env.PORT || 3000;
 const routes = require('./routes'); 
 require('dotenv').config(); 
 
-const Item = require('./models/Item.js'); 
 
 // MIDDLEWARE JSON PARSING 
 app.use(express.urlencoded({extended: false}));
