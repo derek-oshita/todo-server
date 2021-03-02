@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
 // ITEMS ROUTE
 app.use('/api/items', routes.items); 
 
+// AUTH 
+// ADD CONTROLLER AFTER CREATION 
+// app.use('/api/auth'); 
+
 // CONNECTION 
 app.listen(port, () => {
     console.log(`Server is listening on ${port}`)
